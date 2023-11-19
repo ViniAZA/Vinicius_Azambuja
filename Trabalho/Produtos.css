@@ -9,7 +9,6 @@ body{
 h1, p{
     text-align: center;
     padding: 20px;
-    color: black;
     font-weight: bold;
 }
 
@@ -60,4 +59,71 @@ img{
     height: 100%;
     border-radius: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+dialog{
+    width: 60%;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.titulo_modal{
+    color: #fff;
+    text-align: center;
+}
+#escudo{
+    position: relative;
+    left: 47%;
+    width: 50px;
+}
+#escudo2{
+    position: relative;
+    left: 47%;
+    width: 50px;
+}
+#escudo3{
+    position: relative;
+    left: 47%;
+    width: 50px;
+}
+#escudo4{
+    position: relative;
+    left: 47%;
+    width: 50px;
+}
+#link_arsenal1{
+    margin-top: 5px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.link_arsenal2{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    
+}
+#link_aston1{
+    margin-top: 5px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.link_aston2{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    
+}
+
+body.modal-aberto {
+    overflow: hidden; 
 }

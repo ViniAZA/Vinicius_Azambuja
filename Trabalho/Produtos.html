@@ -37,8 +37,31 @@
 <section>
     <div class="produtos">
         <div class = produto><img src="arsenal.jpg" alt="arsenal">
+            <div id="link_arsenal1"><a class="link_arsenal2" href="#">Especificações</a></div>
+            <dialog id="dialog1">
+                <div>
+                <a class="link_arsenal2" href="#">x</a>
+                </div>
+                <img id="escudo" src="Escudo_arsenal.png " alt="Escudo do Arsenal">
+                <h2 class="titulo_modal">Arsenal</h2>
+                <p style="color: rgb(255, 255, 255);"> <b>É uma homenagem aos talentosos artistas torcedores que vivem na estrada levando sua arte.
+                 O manto possui design ousado em amarelo com linhas fluídas e pontilhadas inspiradas no mapa do bairro Islington,
+                 sede do Emirates Stadium.</b></p>
+            </dialog>
         </div>
         <div class = produto><img src="Aston villa.jpg" alt="Aston">
+            <div id="link_aston1"><a class="link_aston2" href="#">Especificações</a></div>
+            <dialog id="dialog2">
+                <div>
+                <a class="link_aston2" href="#">x</a>
+                </div>
+                <img id="escudo2" src="escudo_aston.png" alt="Escudo do Aston">
+                <h2 class="titulo_modal">Aston_Villa</h2>
+                <p style="color: rgb(255, 255, 255);"> 
+                <b>A nova camisa titular do Aston Villa é vinho e assim como é tradicional,
+                traz as mangas em azul celeste, cor que também aparece na barra traseira. O destaque fica para um padrão gráfico no corpo, que, 
+                segundo o clube, “retrata uma impressão sutil de ondas sonoras tiradas de torcedores cantando 'Allez, Allez, Allez'”.</b></p>
+            </dialog>
         </div>
         <div class = produto><img src="manchester united.jpg" alt="man united">
         </div>
@@ -79,7 +102,58 @@
     </div>
 </section>
     </main>
+    <script>
+          const modal = document.getElementById("dialog1");
+          const btnModal = document.getElementsByClassName("link_arsenal2");
+
+            btnModal[0].onclick = function() {
+                modal.showModal();
+                document.body.classList.add("modal-aberto"); 
+            }
+
+            btnModal[1].onclick = function() {
+                modal.close();
+                document.body.classList.remove("modal-aberto"); 
+            }
+
+            modal.addEventListener("click", evento => {
+                if (evento.target === btnModal[1]) {
+                    modal.close();
+                    document.body.classList.remove("modal-aberto"); 
+                }
+            });
+  </script>
+  <script>
+        const modal2 = document.getElementById("dialog2");
+        const btnModal2 = document.getElementsByClassName("link_aston2");
+
     
+        btnModal2[0].onclick = function() {
+                modal2.showModal();
+                document.body.classList.add("modal-aberto"); 
+            }
+
+            btnModal2[1].onclick = function() {
+                modal2.close();
+                document.body.classList.remove("modal-aberto"); 
+            }
+
+            modal2.addEventListener("click", evento => {
+                if (evento.target === btnModal2[1]) {
+                    modal2.close();
+                    document.body.classList.remove("modal-aberto"); 
+                }
+            });
+  </script>
+
+    <script>
+        const h = document.querySelector("h1");
+        const titulos = document.querySelectorAll("h1");
+
+            titulos.forEach(titulo =>{
+                titulo.style.color = "black";
+            });
+    </script>
 </body>
 <footer> 
     <hr> 
