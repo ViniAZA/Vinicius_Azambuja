@@ -8,10 +8,30 @@
 </head> 
 <body> 
     <header> 
-        <nav> 
-            <hr> 
-            <h1>FIVE SPORTS</h1> 
-            <div class="menu container">
+        <nav>
+            <div id="simbolo">
+            <img src="zap.jpg" alt="" >
+            </div>
+            <h1 id="titulo_pag">FIVE SPORTS</h1> 
+            <div id="fora_banner">
+            <section class="banner">
+                <hr>
+                <div class="slides">
+                    <div class="slide">
+                        <img class="imagens" src="foto city.webp" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="imagens" src="lukaku2.webp" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="imagens"  src="madrid2.jpg" alt="">
+                    </div>
+                </div>
+                <hr>
+            </section>
+        </div>
+            
+            <div class="menu">
                 <div class="menu__item">
                 <a class="menu__link" href ="./Home.html" >Home</a>
                 </div> 
@@ -28,7 +48,7 @@
                 <a class="menu__link" href="./Relatorio.html" >Relatórios</a > 
                 </div>
             </div>
-            <hr> 
+           
         </nav> 
     </header>
     <main>
@@ -81,21 +101,13 @@
         </div>
         <div class = produto> <img src="newcastle.jpg" alt="newcastle">
         </div>
-        <div class = produto><img src="Union Berlin.jpg" alt="Union">
-        </div>
         <div class = produto><img src="Leverkusen.jpg" alt="Leverkusen">
-        </div>
-        <div class = produto><img src="Rb Leipzig.jpg" alt="Leipzig">
         </div>
         <div class = produto><img src="Bayern.jpg" alt="Bayern">
         </div>
         <div class = produto><img src="barça.jpg" alt="barça">
         </div>
         <div class = produto><img src="Real Madrid.jpg" alt="Real">
-        </div>
-        <div class = produto><img src="servilla.jpg" alt="Sevilla">
-        </div>
-        <div class = produto><img src="brasil.jpg" alt="Brasil">
         </div>
         <div class = produto><img src="Man city.jpg" alt="manchester city">
         </div>
@@ -151,13 +163,13 @@
         const titulos = document.querySelectorAll("h1");
 
             titulos.forEach(titulo =>{
-                titulo.style.color = "black";
+                titulo.style.color = "white";
             });
     </script>
 </body>
 <footer> 
     <hr> 
-    <sup>©</sup>2023 - Todos os direitos reservados 
+    <p><sup>©</sup>2023 - Todos os direitos reservados</p>
 </footer> 
 </html>
 </html>

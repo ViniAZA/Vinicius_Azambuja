@@ -1,32 +1,45 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: rgb(55, 136, 202);
     color: rgb(0, 0, 0);
    
 }
-
+body{
+    background-image: url(fut3.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+#titulo_pag{
+    font-style: italic;
+    
+}
 
 h1, p{
     text-align: center;
     padding: 20px;
     font-weight: bold;
 }
+p{
+    color: white;
+}
 
 h1{
    font-size: 35px; 
 }
+
 .menu {
-    background-color: #010505;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
-    padding: 5px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 12px;
 }
-
     .menu__item {
-        background-color: #fff;
+       
         align-items: center;
         display: flex;
         flex: 1 1 200px;
@@ -34,13 +47,20 @@ h1{
         margin: 5px;
         padding: 0px;
         border-radius: 15px;
+        
+    }
+    .menu__item:hover{
+        background: linear-gradient(to right, #1a1a1a, #4fc8f8);
+        cursor: pointer;
     }
 
         .menu__link {
-            color: #000000;
+            color: #fffcfc;
             display: block;
             padding: 13px;
             text-decoration: none;
+            font-style: italic;
+            font-size: large;
         }
 .produtos {
     display: grid;
@@ -49,7 +69,7 @@ h1{
 .produto{
     margin: 10px;
     padding: 40px;
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     padding-bottom: 40px;
     border-radius: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -59,6 +79,11 @@ img{
     height: 100%;
     border-radius: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 dialog{
     width: 60%;
@@ -69,7 +94,7 @@ dialog{
 }
 
 dialog::backdrop{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8)
 }
 .titulo_modal{
     color: #fff;
@@ -97,33 +122,98 @@ dialog::backdrop{
 }
 #link_arsenal1{
     margin-top: 5px;
-    background-color: #000000;
+    background-color:  #7c7c7c;
     border-radius: 10px;
     text-align: center;
-    padding: 5px;
+    padding: 2px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#link_arsenal1:hover{
+    background: linear-gradient(to top, #1a1a1a, rgb(92, 92, 92));
+    
 }
 .link_arsenal2{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-style: italic;
-    
+    font-size: large;
 }
 #link_aston1{
     margin-top: 5px;
-    background-color: #000000;
+    background-color: #7c7c7c;
     border-radius: 10px;
     text-align: center;
-    padding: 5px;
+    padding: 2px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#link_aston1:hover{
+    background: linear-gradient(to top, #1a1a1a, rgb(92, 92, 92));
+    
 }
 .link_aston2{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-style: italic;
+    font-size: large;
     
 }
 
 body.modal-aberto {
     overflow: hidden; 
+}
+#fora_banner
+{
+    border-radius: 15px;
+    margin: 25px;
+    padding: 25px;
+}
+.banner {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.slide {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    animation: slide 15s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0% { left: 0px; }
+    20% { left: 0px; }
+    30% { left: -100%; }
+    50% { left: -100%; }
+    60% { left: -200%; }
+    90% { left: -200%; }
+    100% { left: 0px; }
+}
+.imagens {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+#simbolo{
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px;
+    background-color: #25d366; 
+    color: #fff; 
+    border-radius: 50%; 
+    z-index: 9999;
+
+}
+#simbolo:hover{
+    cursor: pointer;
 }
